@@ -452,7 +452,10 @@ nav.scrolled {
     width: 100%;
     height: 100%;
     display: block;
-    object-fit: cover; /* Fills the space without stretching */
+    /* This stops the image from zooming in and cutting off the top text */
+    object-fit: contain; 
+    /* This makes the "gap" around the image match your image's background */
+    background-color: #F7F5F2; 
     object-position: center;
 }
 
