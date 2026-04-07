@@ -427,42 +427,50 @@ nav.scrolled {
     align-items: center;
 }
 
-/* Styling for the image column in the Why Us section */
-.why-grid .why-img-container {
+/* Mobile View Friendly "Why Us" Section */
+
+.why-grid {
+    display: flex; /* Use flex for easier mobile stacking */
+    flex-direction: column; /* Stack: Text on top, Image on bottom */
     width: 100%;
-    height: 100%;
+}
+
+.why-grid .reveal-left {
+    padding: 60px 24px; /* Standard mobile padding */
+}
+
+.why-img-container {
+    width: 100%;
+    height: 400px; /* Fixed height for mobile so it doesn't scroll forever */
     overflow: hidden;
-    display: flex;
 }
 
-.why-grid .why-img-container img {
+.why-img-container img {
     width: 100%;
     height: 100%;
-    min-height: 500px; /* Ensures the image has presence on desktop */
-    object-fit: cover; /* Prevents stretching and fills the grid area */
-    object-position: center;
-    transition: var(--transition);
+    object-fit: cover; /* Ensures image isn't distorted on small screens */
 }
 
-/* Hover effect to match your hero image style */
-.why-grid .why-img-container:hover img {
-    transform: scale(1.05);
-}
-
-/* Mobile adjustment to ensure the image doesn't disappear */
-@media (max-width: 1023px) {
-    .why-img-container {
-        margin-top: 40px;
-        height: 350px;
-    }
-}
-
-
-/* @media (min-width: 1024px) {
+/* Desktop View (1024px and up) */
+@media (min-width: 1024px) {
     .why-grid {
-        grid-template-columns: 1fr 1fr;
+        flex-direction: row; /* Side-by-side layout */
+        align-items: stretch;
     }
-} */
+
+    .why-grid .reveal-left {
+        width: 45%;
+        /* Aligns text with your 1200px container */
+        padding-left: calc((100vw - 1200px) / 2 + 24px); 
+        padding-right: 64px;
+    }
+
+    .why-img-container {
+        width: 55%;
+        height: auto; /* Let image match the height of the text */
+    }
+}
+
 
 .features-grid {
     display: grid;
