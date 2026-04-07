@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bluemera | Made for You, Not for Everyone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="logo-container">
+            <div class="logo-icon">
+                <img src="img/Logo.png" alt="Bluemera Logo" referrerPolicy="no-referrer">
+            </div>
+            <span class="brand-name">BLUEMERA</span>
+        </div>
+        <div class="nav-links">
+            <a href="#personalization">Process</a>
+            <a href="#products">Shop</a>
+            <a href="#why-us">Why Us</a>
+            <a href="#testimonials">Reviews</a>
+        </div>
+        <div class="nav-icons">
+            <button id="search-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+            </button>
+            <button id="cart-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                <span class="cart-count">0</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Cart Sidebar -->
+    <div id="cart-sidebar" class="cart-sidebar">
+        <div class="cart-header">
+            <h3>Your Bag</h3>
+            <button id="cart-close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+            </button>
+        </div>
+        <div id="cart-items" class="cart-items">
+            <!-- Items will be injected here -->
+            <div class="empty-cart-msg">Your bag is empty.</div>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Subtotal</span>
+                <span id="cart-subtotal">₹0.00</span>
+            </div>
+            <button class="btn-primary" style="width: 100%; margin-top: 24px;">Checkout</button>
+        </div>
+    </div>
+    <div id="cart-overlay" class="cart-overlay"></div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-grid">
+            <div class="reveal-left">
+                <span class="hero-tag">Personalized Skincare</span>
+                <h1>Made for You, <br><span>Not for Everyone</span></h1>
+                <p>
+                    Bespoke skincare formulas designed specifically for your unique skin profile. Science-backed, nature-inspired.
+                </p>
+                <div class="hero-btns">
+                    <a href="#products" class="btn-primary">Shop Now</a>
+                    <a href="#personalization" class="btn-outline">Take Skin Quiz</a>
+                </div>
+            </div>
+            <div class="hero-img-container reveal-right">
+                <div class="blob-1"></div>
+                <img src="img/Hero.png" alt="Bluemera Products" referrerPolicy="no-referrer">
+            </div>
+        </div>
+    </section>
+
+    <!-- Personalization Section -->
+    <section id="personalization" class="section-padding" style="background-color: white;">
+        <div class="container text-center reveal">
+            <h2 class="section-title">Your Skin is Unique. <br>Your Skincare Should Be Too.</h2>
+            <div class="divider"></div>
+        </div>
+        <div class="container steps-grid">
+            <div class="step-card reveal" style="transition-delay: 100ms;">
+                <div class="step-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#3E5C6E" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12c0 1.2-4.03 6-9 6s-9-4.8-9-6c0-1.2 4.03-6 9-6s9 4.8 9 6Z"/><circle cx="12" cy="12" r="3"/></svg>
+                </div>
+                <h3>1. Analyze</h3>
+                <p style="color: rgba(62, 92, 110, 0.7);">Complete our comprehensive skin diagnostic to identify your unique needs and goals.</p>
+            </div>
+            <div class="step-card reveal" style="transition-delay: 300ms;">
+                <div class="step-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#3E5C6E" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v10"/><path d="m16 8-4 4-4-4"/><path d="M12 22a7 7 0 1 0 0-14 7 7 0 0 0 0 14Z"/></svg>
+                </div>
+                <h3>2. Formulate</h3>
+                <p style="color: rgba(62, 92, 110, 0.7);">Our experts craft a custom blend of active ingredients tailored specifically for your profile.</p>
+            </div>
+            <div class="step-card reveal" style="transition-delay: 500ms;">
+                <div class="step-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#3E5C6E" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                </div>
+                <h3>3. Transform</h3>
+                <p style="color: rgba(62, 92, 110, 0.7);">Experience visible results with a routine that works in harmony with your biology.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section id="products" class="section-padding">
+        <div class="container products-header reveal">
+            <div>
+                <span class="hero-tag" style="margin-bottom: 16px; display: block;">The Collection</span>
+                <h2 class="section-title">Featured Essentials</h2>
+            </div>
+            <a href="#" class="btn-outline" style="padding: 8px 16px; font-size: 10px;">View All</a>
+        </div>
+        <div class="container products-grid">
+            <!-- Product 1 -->
+            <div class="product-card reveal" data-id="1" data-name="Hydrating Serum" data-price="64.00" data-img="https://picsum.photos/seed/bluemera-serum/800/1000" style="transition-delay: 100ms;">
+                <div class="product-img">
+                    <img src="Serum.png" alt="Hydrating Serum" referrerPolicy="no-referrer">
+                    <button class="add-to-cart-overlay">Add to Cart</button>
+                </div>
+                <h3>Hydrating Serum</h3>
+                <p style="color: rgba(62, 92, 110, 0.6); font-size: 14px; margin-bottom: 16px;">Deep moisture with hyaluronic acid.</p>
+                <span class="product-price">₹200.00</span>
+            </div>
+            <!-- Product 2 -->
+            <div class="product-card reveal" data-id="2" data-name="Daily Moisturizer" data-price="58.00" data-img="https://picsum.photos/seed/bluemera-moisturizer/800/1000" style="transition-delay: 300ms;">
+                <div class="product-img">
+                    <img src="img/Moisturizer.png" alt="Daily Moisturizer" referrerPolicy="no-referrer">
+                    <button class="add-to-cart-overlay">Add to Cart</button>
+                </div>
+                <h3>Daily Moisturizer</h3>
+                <p style="color: rgba(62, 92, 110, 0.6); font-size: 14px; margin-bottom: 16px;">Lightweight barrier protection.</p>
+                <span class="product-price">₹300.00</span>
+            </div>
+            <!-- Product 3 -->
+            <div class="product-card reveal" data-id="3" data-name="Gentle Cleanser" data-price="42.00" data-img="https://picsum.photos/seed/bluemera-cleanser/800/1000" style="transition-delay: 500ms;">
+                <div class="product-img">
+                    <img src="img/Clenser.png" alt="Gentle Cleanser" referrerPolicy="no-referrer">
+                    <button class="add-to-cart-overlay">Add to Cart</button>
+                </div>
+                <h3>Gentle Cleanser</h3>
+                <p style="color: rgba(62, 92, 110, 0.6); font-size: 14px; margin-bottom: 16px;">Purifying botanical extract blend.</p>
+                <span class="product-price">₹350.00</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Bluemera -->
+    <section id="why-us" class="section-padding bg-slate">
+        <div class="container why-grid">
+            <div class="reveal-left">
+                <h2 class="section-title" style="margin-bottom: 48px;">Conscious Beauty, <br>Uncompromising Results.</h2>
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <div class="feature-divider"></div>
+                        <h4>Personalized Formulas</h4>
+                        <p>Every bottle is mixed specifically for your skin's unique chemistry.</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-divider"></div>
+                        <h4>Clean Ingredients</h4>
+                        <p>Free from parabens, sulfates, and synthetic fragrances. Purely effective.</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-divider"></div>
+                        <h4>Dermatologically Tested</h4>
+                        <p>Rigorous clinical testing ensures safety and efficacy for all skin types.</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-divider"></div>
+                        <h4>Eco-Conscious</h4>
+                        <p>Sustainable packaging and ethically sourced ingredients from start to finish.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="section-padding">
+        <div class="container text-center reveal" style="margin-bottom: 64px;">
+            <h2 class="section-title">Real Skin Stories</h2>
+            <p style="text-transform: uppercase; letter-spacing: 0.2em; font-size: 12px; font-weight: 700; color: rgba(62, 92, 110, 0.6);">What our community says</p>
+        </div>
+        <div class="container testimonials-grid">
+            <div class="testimonial-card reveal" style="transition-delay: 100ms;">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">"I've struggled with adult acne for years. The personalized serum from Bluemera changed everything in just 3 weeks."</p>
+                <div class="user-info">
+                    <div class="user-avatar" style="background-color: var(--beige);"></div>
+                    <div>
+                        <p style="font-weight: 700; font-size: 14px;">Elena R.</p>
+                        <p style="font-size: 10px; text-transform: uppercase; letter-spacing: 0.1em; color: rgba(62, 92, 110, 0.4);">Verified Customer</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card reveal" style="transition-delay: 300ms;">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">"The texture of the daily moisturizer is like silk. My skin feels hydrated all day without being greasy."</p>
+                <div class="user-info">
+                    <div class="user-avatar" style="background-color: var(--teal);"></div>
+                    <div>
+                        <p style="font-weight: 700; font-size: 14px;">Marcus K.</p>
+                        <p style="font-size: 10px; text-transform: uppercase; letter-spacing: 0.1em; color: rgba(62, 92, 110, 0.4);">Verified Customer</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card reveal" style="transition-delay: 500ms;">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">"Finally, a brand that understands that one size doesn't fit all. The skin quiz was so insightful!"</p>
+                <div class="user-info">
+                    <div class="user-avatar" style="background-color: var(--slate-blue);"></div>
+                    <div>
+                        <p style="font-weight: 700; font-size: 14px;">Sarah L.</p>
+                        <p style="font-size: 10px; text-transform: uppercase; letter-spacing: 0.1em; color: rgba(62, 92, 110, 0.4);">Verified Customer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Email Subscription -->
+    <section class="section-padding" style="background-color: white;">
+        <div class="container text-center reveal" style="max-width: 800px;">
+            <h2 class="section-title">Join the Inner Circle</h2>
+            <p style="margin-bottom: 40px; color: rgba(62, 92, 110, 0.7);">Get 10% off your first order and exclusive access to new formulas.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="YOUR EMAIL ADDRESS">
+                <button type="submit" class="btn-primary">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div style="grid-column: span 1;">
+                <div class="logo-container footer-logo">
+                    <img src="img/Logo.png" alt="Bluemera Logo" style="height: 24px;" referrerPolicy="no-referrer">
+                    <span class="brand-name" style="font-size: 20px;">BLUEMERA</span>
+                </div>
+                <p style="color: rgba(62, 92, 110, 0.5); font-size: 14px; max-width: 300px;">
+                    Redefining beauty through personalization and science. Made for you, not for everyone.
+                </p>
+            </div>
+            <div class="footer-links">
+                <h5>Explore</h5>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Our Process</a></li>
+                    <li><a href="#">Sustainability</a></li>
+                    <li><a href="#">Journal</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h5>Support</h5>
+                <ul>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Shipping & Returns</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p class="copyright">© 2026 Bluemera Skincare. All rights reserved.</p>
+            <div style="display: flex; gap: 32px;">
+                <a href="#" class="copyright" style="text-decoration: none;">Privacy Policy</a>
+                <a href="#" class="copyright" style="text-decoration: none;">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
